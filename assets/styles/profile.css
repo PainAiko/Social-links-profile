@@ -1,0 +1,247 @@
+:root {
+    --red: red;
+    --black: #141414;
+    --black200: #1f1f1f;
+    --green: hsl(75, 94%, 57%);
+    --white: hsl(0, 0%, 100%);
+    --grey700: hsl(0, 0%, 20%);
+    --grey800: hsl(0, 0%, 12%);
+    --grey900: hsl(0, 0%, 8%);
+    --primary:#333333;
+}
+
+/*Layout**/
+.flex-col {
+   display: flex;
+   flex-direction: column;
+}
+
+p {
+    padding: 0;
+    margin: 5px auto;
+}
+
+body {
+    background-color: var(--black);
+    height: 100vh;
+    margin: 0 auto;
+    font-family: 'Inter', sans-serif;
+    color: var(--white);
+}
+
+/*space*/
+.mb-10 {
+    margin-bottom: 10px;
+}
+.mt-10 {
+    margin-top: 10px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+
+/**font size**/
+
+.text10 {
+    font-size: 10px;
+}
+
+.text12 {
+    font-size: 12px;
+}
+
+p {
+    font-size: 14px;
+
+}
+
+.text-size--24 {
+    font-size: 24px;
+}
+
+/** Color text***/
+.text-green {
+    color: var(--green);
+}
+
+.text-white {
+    color: var(--white);
+}
+
+/***font inter**/
+
+.font-inter {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+.font-400 {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.font-600 {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.font-700 {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+.font-800 {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+}
+
+/***button**/
+
+.btn {
+    padding: 20px 10px;
+    text-align: center;
+    width: 300px;
+    border-radius: 10px;
+    color: var(--white);
+    border: none;
+    cursor: pointer;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 17px;
+}
+
+.btn-primary {
+    background-color: var(--grey700);
+    cursor: pointer;
+}
+
+.btn-primary:active , button[data-active=true] {
+    background-color: var(--green);
+    color:var(--black);
+    cursor: pointer;
+}
+
+
+.profile-container {
+
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.contain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    height: auto;
+    width: 400px;
+    background-color: var(--black200);
+    border-radius: 10px;
+}
+
+
+.img-contain>img {
+    border-radius: 50%;
+    width: 70%;
+}
+
+.img-contain {
+    text-align: center;
+}
+
+.speciality__text {
+    margin-top: 10px;
+}
+
+
+.f {
+    font-family: "Edu AU VIC WA NT Dots", cursive;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+.font-inter {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+
+@media screen and (max-width: 600px){
+    .container {
+        width: 300px;
+    }
+
+    .img-contain>img {
+        width: 50%;
+    }
+
+    .btn {
+        width: 250px;
+    }
+
+    body{
+        overflow-y: scroll;
+    }
+}
+
+@media screen and (max-height: 570px){
+    .container {
+        width: 300px;
+        height: auto;
+        padding-top: 10px;
+    }
+
+    .contain {
+        height: auto;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    .img-contain>img {
+        width: 50%;
+    }
+
+    .btn {
+        width: 250px;
+        padding: 10px 10px;
+    }
+
+    body{
+        overflow-y: scroll;
+    }
+}
+

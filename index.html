@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Dots:wght@400..700&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="assets/styles/profile.css" />
+
+  <title>Frontend Mentor | Social links profile</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <!--  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style> -->
+</head>
+
+<body>
+
+  <!--  Jessica Randall
+  London, United Kingdom
+  "Front-end developer and avid reader."
+
+  GitHub
+  Frontend Mentor
+  LinkedIn
+  Twitter
+  Instagram -->
+  <div class="contain">
+    <div class="container">
+      <div class="profile-container">
+        <div class="img-contain">
+          <img src="assets/images/avatar-jessica.jpeg" />
+        </div>
+        <div class="font-inter text-md text-size--24">Jessica Randall</div>
+        <p class="text-green font-800 text12 ">London, United Kingdom</p>
+        <p class="speciality__text">"Front-end developer and avid reader."</p>
+        <div class="mt-30 flex-col">
+          <button data-active="false" id="github" class="btn btn-primary mb-10">
+             GitHub
+          </button>
+          <button  data-active="false" id="frontendmentor" class="btn btn-primary mb-10">
+             Frontend Mentor
+          </button>
+          <button data-active="false" id="linkedIn" class="btn btn-primary mb-10">
+             LinkedIn
+          </button>
+          <button data-active="false" id="twitter" class="btn btn-primary mb-10">
+             Twitter
+          </button>
+          <button data-active="false" id="instagram" class="btn btn-primary mb-10">
+             Instagram
+          </button>
+        </div>
+      </div>
+
+    </div>
+
+    <!--  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Onjaniaina754</a>.
+  </div> -->
+  </div>
+</body>
+<script src="./scripts/active.js"></script>
+</html>
